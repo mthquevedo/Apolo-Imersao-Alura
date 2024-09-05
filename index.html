@@ -14,16 +14,46 @@
     </header>
 
     <main class="home__main">
-        <h2>Viaje pelo desconhecido</h2>
-        <h3>Conheça um pouco mais sobre os planetas no sistema solar</h3>
-        <a>Explorar</a>
+
+        <aside class="intro" id="intro">
+            <h3>Saiba mais sobre os planetas do nosso sistema solar</h3>
+            <h2>EXPLORE<br>
+                O ESPAÇO</h2>
+            <button onclick="ocultaIntro()">
+                <p>Iniciar agora</p>
+            </button>
+        </aside>
+
+        <section id="planetas" class="planetas_sec">
+            <p>Teste</p>
+        </section>
     </main>
 
     <footer class="home__footer">
         <p>2024 - Projeto Apolo. Todos os direitos reservados</p>
-        <p>Desenvolvido por <a href="https://www.linkedin.com/in/matheus-quevedo-599315185/" target="_blank">@Matheus
+        <p>Criado por <a href="https://www.linkedin.com/in/matheus-quevedo-599315185/" target="_blank">@Matheus
                 Quevedo</a></p>
     </footer>
 </body>
+
+<script>
+    const intro = document.getElementById("intro");
+    const planetas = document.getElementById("planetas");
+
+    function ocultaIntro() {
+
+        intro.classList.add("ocultar_animacao");
+
+        setTimeout(() => {
+            intro.classList.add("ocultar");
+        }, 550);
+
+        exibePlanetas();
+    }
+
+    function exibePlanetas() {
+        planetas.classList.add("exibir");
+    }
+</script>
 
 </html>
