@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 .home__body {
     font-family: "Poppins", sans-serif;
@@ -45,6 +48,7 @@
     display: flex;
     justify-content: start;
     flex: 1;
+    overflow: auto;
 }
 
 .intro h3 {
@@ -99,7 +103,7 @@
 
 .exibir {
     display: block;
-    animation: fadeIn 900ms ease-in;
+    animation: fadeIn 850ms ease-in;
 }
 
 .busca_container {
@@ -107,7 +111,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
+    /* margin-top: 3rem; */
 }
 
 .busca_container_descricao {
@@ -127,7 +131,6 @@
 
 .busca_planetas {
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
@@ -139,7 +142,10 @@
     cursor: pointer;
     color: #ffffff;
     background: linear-gradient(90deg, #005fcc, #00d9ff);
-    padding: 8px 12px;
+    padding: 12px 12px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
     border: 0;
 }
 
@@ -148,11 +154,107 @@
     border-radius: 6px;
     padding: 12px 12px;
     margin-top: 0.5rem;
+    margin-bottom: 1rem;
     border: 0;
 }
 
 .busca_planetas input:focus {
     outline: none;
+}
+
+.resultados_container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 0.5rem 5rem;
+}
+
+.resultado_planeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 27rem;
+    padding: 0.5rem;
+    padding-top: 2.2rem;
+    background-color: #00000056;
+    border: 2px solid #353535;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 8ms ease-in;
+}
+
+.planeta_nome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 2px;
+    width: 120px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #005fcc;
+    border-radius: 0px 0px 12px 0px;
+}
+
+
+.resultado_planeta img {
+    position: absolute;
+    width: 22rem;
+    top: -1.5rem;
+    right: -11rem;
+    user-select: none;
+}
+
+.planeta_infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 0.8rem;
+    width: 80%;
+}
+
+.planeta_infos a {
+    text-align: left;
+    font-weight: 600;
+    text-decoration: none;
+    color: #4be4ff;
+    font-size: 0.8rem;
+    align-self: flex-start;
+}
+
+.planeta_infos a:hover {
+    text-decoration: underline;
+}
+
+.infos_linha {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 0.7rem;
+}
+
+.info_cel {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 0.3rem;
+}
+
+.info_cel .titulo {
+    color: #ffffff;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.info_cel .info {
+    color: #dadada;
+    font-size: 0.7rem;
+    margin: 0;
 }
 
 /* section {
