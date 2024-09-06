@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="src/3904303.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Apolo</title>
@@ -33,50 +34,13 @@
                         cometas, asteroides e o espaço entre eles.</p>
                 </div>
                 <div class="busca_planetas">
-                    <input type="text" placeholder="Pesquise por um planeta">
-                    <button>Pesquisar</button>
+                    <input id="input_pesquisa" type="text" placeholder="Pesquise por um planeta">
+                    <button onclick="pesquisar()">Pesquisar</button>
                 </div>
             </div>
 
-            <section class="resultados_container">
-                <div class="resultado_planeta">
-                    <h1 class="planeta_nome">Mercúrio</h1>
-                    <img src="src/mercury.png" alt="Foto do planeta mercúrio">
+            <section id="resultados_container" class="resultados_container">
 
-                    <div class="planeta_infos">
-                        <div class="infos_linha">
-                            <div class="info_cel">
-                                <p class="titulo">Velocidade orbital (Média)</p>
-                                <p class="info">47,362 km/s</p>
-                            </div>
-                            <div class="info_cel">
-                                <p class="titulo">Período de rotação</p>
-                                <p class="info">58,646 dias</p>
-                            </div>
-                            <div class="info_cel">
-                                <p class="titulo">Massa<br>(Média)</p>
-                                <p class="info">166,85 ºC</p>
-                            </div>
-                        </div>
-                        <div class="infos_linha">
-                            <div class="info_cel">
-                                <p class="titulo">Temperatura (Média)</p>
-                                <p class="info">47,362 km/s</p>
-                            </div>
-                            <div class="info_cel">
-                                <p class="titulo">Gravidade superficial</p>
-                                <p class="info">58,646 dias</p>
-                            </div>
-                            <div class="info_cel">
-                                <p class="titulo">Número <br>de satélites</p>
-                                <p class="info">166,85 ºC</p>
-                            </div>
-                        </div>
-
-                        <a href="https://pt.wikipedia.org/wiki/Merc%C3%BArio_(planeta)#:~:text=Merc%C3%BArio%20%C3%A9%20um%20dos%20quatro,Tit%C3%A3%2C%20embora%20seja%20mais%20massivo."
-                            target="_blank">Saiba mais</a>
-                    </div>
-                </div>
             </section>
 
         </section>
@@ -89,6 +53,7 @@
     </footer>
 </body>
 
+<script src="dados.js"></script>
 <script src="app.js"></script>
 
 </html>
