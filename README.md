@@ -5,7 +5,7 @@
 
 **Apolo** é um projeto web interativo que te convida a explorar o fascinante mundo dos planetas do nosso sistema solar. Com uma interface intuitiva e dados precisos, você pode descobrir curiosidades sobre cada planeta, desde sua velocidade orbital até o número de satélites.
 
-###  Link do deploy:
+###  Link do deploy: [apolo-imersao-alura-ph6ssob01-mthquevedos-projects.vercel.app](https://apolo-imersao-alura-ph6ssob01-mthquevedos-projects.vercel.app/)
 
 ###  Funcionalidades:
 
