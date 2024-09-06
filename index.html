@@ -25,7 +25,20 @@
         </aside>
 
         <section id="planetas" class="planetas_sec">
-            <p>Teste</p>
+            <div class="busca_container">
+                <div class="busca_container_descricao">
+                    <h3>Em uma galáxia não tão distante</h3>
+                    <p>O nosso sistema solar consiste de uma estrela média, a que chamamos o Sol, os planetas Mercúrio,
+                        Vénus, Terra, Marte, Júpiter, Saturno, Urano, Netuno e Plutão. Inclui: os satélites dos
+                        planetas; numerosos cometas, asteróides, e meteoróides; e o espaço interplanetário.</p>
+                </div>
+                <div class="busca_planetas">
+                    <input type="text" placeholder="Digite o nome de um planeta">
+                    <button>Buscar</button>
+                </div>
+            </div>
+
+
         </section>
     </main>
 
@@ -36,24 +49,6 @@
     </footer>
 </body>
 
-<script>
-    const intro = document.getElementById("intro");
-    const planetas = document.getElementById("planetas");
-
-    function ocultaIntro() {
-
-        intro.classList.add("ocultar_animacao");
-
-        setTimeout(() => {
-            intro.classList.add("ocultar");
-        }, 550);
-
-        exibePlanetas();
-    }
-
-    function exibePlanetas() {
-        planetas.classList.add("exibir");
-    }
-</script>
+<script src="app.js"></script>
 
 </html>
