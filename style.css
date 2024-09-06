@@ -91,10 +91,10 @@
     display: none;
 }
 
-
 .planetas_sec {
-    color: white;
     display: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .exibir {
@@ -102,6 +102,58 @@
     animation: fadeIn 900ms ease-in;
 }
 
+.busca_container {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.busca_container_descricao {
+    width: 40%;
+    text-align: center;
+}
+
+.busca_container_descricao h3 {
+    color: #00d9ff;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 4px;
+}
+
+.busca_planetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.busca_planetas button {
+    width: 100px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    background: linear-gradient(90deg, #005fcc, #00d9ff);
+    padding: 8px 12px;
+    border: 0;
+}
+
+.busca_planetas input {
+    width: 300px;
+    border-radius: 6px;
+    padding: 12px 12px;
+    margin-top: 0.5rem;
+    border: 0;
+}
+
+.busca_planetas input:focus {
+    outline: none;
+}
 
 /* section {
     display: flex;
