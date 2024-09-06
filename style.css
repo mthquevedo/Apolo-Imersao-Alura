@@ -111,7 +111,6 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: 3rem; */
 }
 
 .busca_container_descricao {
@@ -200,12 +199,11 @@ html {
     border-radius: 0px 0px 12px 0px;
 }
 
-
 .resultado_planeta img {
     position: absolute;
     width: 22rem;
     top: -1.5rem;
-    right: -11rem;
+    right: -11.4rem;
     user-select: none;
 }
 
@@ -235,7 +233,8 @@ html {
     display: flex;
     align-items: start;
     justify-content: flex-start;
-    gap: 0.7rem;
+    gap: 0.4rem;
+    z-index: 2;
 }
 
 .info_cel {
@@ -257,43 +256,9 @@ html {
     margin: 0;
 }
 
-/* section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-
-section input {
-    width: 30rem;
-    border: none;
-    padding: 1rem;
-    border-radius: 1.5rem;
-    margin-bottom: 1rem;
-    color: #45474B;
-    font-size: 1rem;
-    box-sizing: border-box;
-}
-
-section button {
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 1.5rem;
-    background-color: #30475E;
-    color: #F5F7F8;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-section button:hover {
-    background-color: #30475E;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-} */
-
 .resultados-pesquisa {
     width: 60rem;
     height: 46vh;
-    overflow-y: auto;
     margin-top: 1rem;
     padding: 1rem;
     border-radius: 0.6rem;
@@ -414,40 +379,86 @@ section button:hover {
 }
 
 @media (max-width: 480px) {
+    .home__main {
+        justify-content: center;
+        overflow-x: hidden;
+    }
 
-    h1 {
-        font-size: 1.8rem;
+    header {
+        z-index: 12;
+    }
 
-        letter-spacing: 0.1rem;
+    .intro {
+        width: 100vw;
+        padding-left: 8%;
 
     }
 
-    section input {
-        width: 17rem;
-
+    .intro h2 {
+        font-size: 4rem;
+        line-height: 4.5rem;
     }
 
-    section button {
-        padding: 0.6rem 1rem;
-
-        font-size: 0.9rem;
-
-    }
-
-    .resultados-pesquisa {
-        width: 90%;
-
-        height: 50vh;
-
-    }
-
-    .item-resultado h2 {
-        font-size: 1.1rem;
-
+    .intro h3 {
+        color: #00d9ff;
+        font-size: 0.7rem;
+        padding-right: 48%;
     }
 
     footer {
-        font-size: 0.9rem;
+        z-index: 10;
+    }
 
+    .planetas_sec {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .busca_container_descricao {
+        width: 60%;
+        text-align: center;
+    }
+
+    .busca_container_descricao h3 {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 4px;
+    }
+
+    .busca_container_descricao p {
+        font-size: 0.8rem;
+    }
+
+    .busca_planetas input {
+        width: 190px;
+    }
+
+    .busca_planetas button {
+        width: 90px;
+    }
+
+    .resultados_container {
+        gap: 1rem;
+    }
+
+    .resultado_planeta {
+        width: 80vw;
+    }
+
+    .planeta_nome {
+        width: 100px;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .resultado_planeta img {
+        position: absolute;
+        width: 20rem;
+        top: -1rem;
+        right: -12rem;
+        user-select: none;
     }
 }
